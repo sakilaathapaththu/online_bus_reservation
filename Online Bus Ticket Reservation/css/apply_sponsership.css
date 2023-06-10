@@ -1,0 +1,249 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffffff,rgb(192, 132, 58) );
+  }
+  
+  .logo img {
+    align-items: left center;
+    width:200px;
+  }
+  
+  .advertisement {
+    text-align: center;
+    max-width: 500px;
+    align-items: center ;
+    border:5px;
+    border-color: #000000;
+    margin: center auto;
+    padding: 5px;
+    color: #000000;
+
+    
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-left:5px;
+    margin-right:5px;
+    padding: 5px;
+  }
+  
+  .Button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: left auto;
+    padding:30px;
+    background-color: #333 
+  }
+  
+  .sign-btn,
+  .register-btn {
+    color: #ffffff; /* Change the text color to red */
+    text-decoration-color: initial; /* Reset the text decoration color */
+    background-color: #b37946;
+    border:6px;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    transition-duration: 0.5s;
+    border-color: #333;
+   
+    margin-right: 10px;
+  }
+  .sign-btn:hover,
+  .register-btn:hover {
+      background-color: rgb(0, 0, 0);}
+  
+  .fas.fa-user.user-large {
+    color:#333;
+    font-size: 40px;
+    margin-right: 5px;
+  }
+  
+  .navbar {
+    background-color: #333;
+  }
+  
+  .navbar a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .navbar a.right {
+    margin-left: auto;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .navbar a.active {
+    background-color: #555;
+  }
+  .form {
+    margin-right: 20px;
+  }
+
+.container_p
+{
+
+    border: 2px solid #000000;
+    padding:20px;
+    background:rgb(255, 234, 209);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+
+}
+.col2
+{
+    text-align: center;
+   
+}
+.col3
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pc ,input
+{
+  margin-left: 10%;
+  width: 70%;
+ 
+}
+.col4
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+
+.col5
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.pc2
+{
+    margin-left: 17%;
+}
+.col6
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.col7
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.col8
+{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.pc5
+{
+    margin-left: 17%;
+}
+  .pc4 {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(17, 39, 183);
+    float: left;
+   
+    
+  }
+  
+  .pc4 input[type="checkbox"] {
+    position: relative;
+    margin-right: 5px;
+    top: 2px;
+  }
+  
+  .pc4 label {
+    margin-left: 5px;
+  }
+ 
+p{
+
+font-size: 17px;
+font-style: italic;
+    
+}
+
+
+
+  
+.pc3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 17px;
+    font-weight: normal;
+  }
+  
+  .pc3 input[type="checkbox"]+label {
+    margin-top: 10px;
+  }
+  .check1
+  {
+  
+  display: block;
+      
+  
+  }
+   
+.check4
+{
+
+    display: block;
+}
+.check5
+{
+
+    display: block;
+}
+.check6
+{
+
+    display: block;
+}
+.check7
+{
+
+    display: block;
+}
+.button1{
+
+
+    background-color: #c22828;
+    text-decoration: #ddd;
+    font-size: larger;
+    width: 80px;
+    border-radius: 8px;
+    margin-left: 80%;
+}
+.button1:hover{
+
+    background-color: rgb(237, 102, 90);
+    color: rgb(32, 31, 31);
+
+}

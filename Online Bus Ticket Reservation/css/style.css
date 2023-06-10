@@ -1,0 +1,360 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Navigation Bar */
+.nav {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2C3333;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  display: block;
+  text-decoration: none;
+  color: #0E8388;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 8px;
+  margin-left: 0;
+}
+
+li a:hover {
+  color: #CBE4DE;
+}
+
+.nav i {
+  float: right;
+  margin: 18px auto;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 25px;
+  margin-left: 20px;
+  vertical-align: auto;
+}
+/*Drop Down*/
+
+/* Image Slider */
+.slider{
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+  justify-content: center;
+  height: auto;
+}
+.slides img {vertical-align: middle;}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Booking Area */
+.booking-container {
+  margin: 10px auto;
+  text-align: center;
+  border: 3px solid black;
+  height: auto;
+  width: 650px;
+}
+
+.box-1 {
+  width: 140px;
+  height: auto;
+  left: auto;
+  margin-right: 200px;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #0E8388;
+  background-color: #2C3333;
+}
+
+.box-1:hover {
+  color: #CBE4DE;
+}
+
+.box-1:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box-1:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box-1:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box-1:hover:before {
+  border-color: #f8f4f4;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box-1:hover:after {
+  border-color: #f8f4f4;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+.content select ,.content input{
+  float: left;
+  width: 250px;
+  height: 50px;
+  margin: 50px 10px auto;
+  color: #0E8388;
+  background-color: #ecf1f1;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.passenger input{
+  display: flexbox;
+  width: 50px;
+  height: 50px;
+  margin: 250px 10px auto;
+  color: #0E8388;
+  background-color: #ecf1f1;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.checkmark {
+  background-color: #ecf1f1;
+  float: left;
+  margin-left: 10px;
+  margin-top: -10px;
+  color: #0E8388;
+  width: 150px;
+  height: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+ 
+.submit-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search:hover {
+  background-color: #5fcaca;
+}
+
+/* Cards */
+.packages{
+  display: flex;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  width: 13.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #CBE4DE;
+  border-radius: 10px;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  margin: 25px;
+}
+.card:hover{
+  scale: 1.1;
+  border:5px solid #0E8388;
+}
+.card::after {
+  content: "VISIT";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #333;
+  color: #0E8388;
+  height: 2.5em;
+  width: 90%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #0E8388;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.8);
+}
+
+.card:active::after {
+  content: "GO !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image img{
+  background: rgb(241, 241, 241);
+  width: 13.875em;
+  height: 14.0em;
+  display: grid;
+  place-items: center;
+}
+.headline-1{
+  text-align: center;
+}
+
+
+/* Footer Section */
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex-basis: 25%;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #333;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.social-media a {
+  color: #666;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: #333;
+}
